@@ -43,10 +43,10 @@ with open(dir+log_name) as logs:
 
                 #appending to the errors' dict
                 error = re.search(error_pattern, log).group()   #capturing the ERROR message from the log
-                if error not in errors: # if the ERROR message is not in the dict, then append 1
+                if error not in errors: # if the ERROR message is not in the dict, then make it 1
                     errors[error] = 1
                 else:
-                    errors[error] += 1
+                    errors[error] += 1  #if the ERROR message is already in the dict, then append 1 to the former value
 
 per_users = sorted(per_users.items())   #sorting users' dict alphabetically
 errors = sorted(errors.items(), key=operator.itemgetter(1), reverse=True)   # sorting by the number of errors, DESC order
