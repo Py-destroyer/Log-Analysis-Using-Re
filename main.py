@@ -4,8 +4,8 @@ import operator
 
 errors = {} #dictionary for errors
 per_users = {}  #dict for users
-dir = '/Users/denis/Desktop/PY/Google_Coursera/Google crash course_final project'  #the directory of the log's file
-log_name = '/LOGS.txt'  #name of the log's file., e.g, LOGS.txt
+dir = ''  #the directory of the log's file
+log_name = ''  #name of the log's file., e.g, LOGS.txt
 
 '''logs look like: 
 Jan 31 17:29:11 ubuntu.local ticky: ERROR Connection to DB failed (oren)
